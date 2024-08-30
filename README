@@ -1,0 +1,4 @@
+This is a minimal example of how to use Spring Boot with Webflux and OAuth2 with an application service that
+utilizes technical user obtaining a token via password flow to access a protected remote api.
+The application service is exposed as a REST API and also requires an OAuth2 token. This token however is not
+passed to the application service.

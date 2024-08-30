@@ -1,0 +1,25 @@
+backend:
+  url: http://localhost:8090
+
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8050
+      client:
+        provider:
+          authsystem:
+            issuer-uri: http://localhost:8050
+        registration:
+          service:
+            provider: authsystem
+            authorization-grant-type: password
+            client-id: foo-client
+            client-secret: super-secret-foo-client-secret
+
+app:
+  user:
+    username: techical_user
+    password: password
